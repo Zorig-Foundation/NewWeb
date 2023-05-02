@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  /* text-align: center; */
 }
 .container {
   background-size: cover;
@@ -79,7 +78,6 @@ h3 {
 }
 h2 {
   font-family: var(--H2-font);
-  font-weight: 300px;
 }
 .sub_Hs {
   margin-left: 3rem;

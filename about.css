@@ -1,0 +1,107 @@
+:root {
+  --h3-color: #00669a;
+  --color--black: #000000;
+  --Ded-Size: "Noto Sans", sans-serif;
+  --H2-font: "Ubuntu", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  text-align: center;
+}
+.container {
+  background-size: cover;
+  font-family: sans-serif;
+  text-align: center;
+  padding-left: 15%;
+  margin: auto;
+}
+header {
+  background-color: #002e60;
+  color: aliceblue;
+  display: flex;
+  margin: auto;
+  border-bottom: 2px solid #c39a00;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+}
+header * {
+  text-align: center;
+  display: inline;
+}
+header ul {
+  display: flex;
+  margin: auto;
+  padding-right: 20%;
+  padding-inline-start: 0;
+}
+header li {
+  margin: 10px;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+header li a {
+  padding: 10px;
+  color: aliceblue;
+  text-decoration: none;
+}
+header li a:hover {
+  color: #c39a00;
+}
+.logo img {
+  height: 70px;
+  width: 100%;
+  padding-left: 250%;
+}
+.logo {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+/* Main */
+.portraitZorig {
+  width: 100%;
+  height: 100%;
+}
+.section_Core {
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 5%;
+}
+h3 {
+  color: var(--h3-color);
+  font-family: var(--Ded-Size);
+  margin-bottom: 1rem;
+}
+h2 {
+  font-family: var(--H2-font);
+  font-weight: 300px;
+}
+.medium {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 7% 7% 7% 7%;
+  gap: 10%;
+}
+.scholarshipCount {
+  font-size: 3rem;
+  font-family: "Pass through";
+}
+.line {
+  position: relative;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  background-color: var(--color--black);
+  bottom: -0.5rem;
+  width: 100%;
+  left: 0;
+}

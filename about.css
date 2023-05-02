@@ -3,6 +3,8 @@
   --color--black: #000000;
   --Ded-Size: "Noto Sans", sans-serif;
   --H2-font: "Ubuntu", sans-serif;
+  --header-color: #002e60;
+  --hover--color: #c39a00;
 }
 body {
   margin: 0;
@@ -17,11 +19,11 @@ body {
   margin: auto;
 }
 header {
-  background-color: #002e60;
+  background-color: var(--header-color);
   color: aliceblue;
   display: flex;
   margin: auto;
-  border-bottom: 2px solid #c39a00;
+  border-bottom: 2px solid var(--hover--color);
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -39,7 +41,7 @@ header ul {
 }
 header li {
   margin: 10px;
-  font-size: 10px;
+  font-size: 0.75rem;
   font-family: "Roboto", sans-serif;
 }
 header li a {
@@ -48,7 +50,7 @@ header li a {
   text-decoration: none;
 }
 header li a:hover {
-  color: #c39a00;
+  color: var(--hover--color);
 }
 .logo img {
   height: 70px;
@@ -67,26 +69,32 @@ header li a:hover {
   width: 100%;
 }
 .section_Core {
-  margin-left: 14%;
-  margin-right: 14%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 5%;
 }
 h3 {
   color: var(--h3-color);
   font-family: var(--Ded-Size);
-  margin-bottom: 1rem;
+  margin-left: -2rem;
 }
 h2 {
+  margin-left: -2rem;
   font-family: var(--H2-font);
 }
-.sub_Hs {
-  margin-left: 3rem;
+.section_subCore {
+  padding-top: 7rem;
 }
 .medium {
   display: flex;
-  flex-wrap: wrap;
+  margin-top: 10%;
+  /* padding-top: 10%;
+  padding-left: 6%;
+  padding-right: 6%; */
+  /* flex-wrap: wrap; */
   width: 100%;
-  padding: 7% 7% 7% 7%;
+}
+.medium_gap {
   gap: 10%;
 }
 .scholarshipCount {
@@ -99,8 +107,9 @@ h2 {
 .line::before {
   content: "";
   position: absolute;
-  height: 0.5px;
-  background-color: var(--color--black);
+  height: 0.1vh;
+  color: var(--header-color);
+  background-color: var(--header-color);
   bottom: -0.5rem;
   width: 100%;
   left: 0;

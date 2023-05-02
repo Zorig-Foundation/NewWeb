@@ -77,10 +77,12 @@ h3 {
   color: var(--h3-color);
   font-family: var(--Ded-Size);
   margin-left: -2rem;
+  font-size: 0.9rem;
 }
 h2 {
   margin-left: -2rem;
   font-family: var(--H2-font);
+  font-size: 1.1rem;
 }
 .section_subCore {
   padding-top: 7rem;
@@ -98,11 +100,12 @@ h2 {
   gap: 10%;
 }
 .scholarshipCount {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Pass through";
 }
 .line {
   position: relative;
+  font-size: 0.8rem;
 }
 .line::before {
   content: "";
@@ -113,4 +116,49 @@ h2 {
   bottom: -0.5rem;
   width: 100%;
   left: 0;
+}
+/* Түүх */
+.dot {
+  position: relative;
+  margin-top: -5px;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background: #393c40;
+  outline: 5px solid rgba(57, 60, 64, 0.25);
+  cursor: pointer;
+}
+.margin-negative {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.section {
+  height: 200px;
+  width: 100%;
+  background-color: #00669a;
+}
+.top-section {
+  margin-bottom: 2rem;
+}
+.bottom-section {
+  margin-top: 2rem;
+}
+.history {
+  display: flex;
+  position: relative;
+  height: 1px;
+  border-top: 1px dashed #000;
+  justify-content: space-between;
+  width: 100%;
+}
+.year-bot,
+.year-top {
+  position: absolute;
+  left: -0.7rem;
+}
+.year-bot {
+  top: 1.2rem;
+}
+.year-top {
+  bottom: 1.2rem;
 }

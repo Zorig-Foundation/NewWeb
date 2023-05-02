@@ -1,0 +1,168 @@
+:root {
+  --h3-color: #00669a;
+  --color--black: #000000;
+  --Ded-Size: "Noto Sans", sans-serif;
+  --H2-font: "Ubuntu", sans-serif;
+  --header-color: #002e60;
+  --hover--color: #c39a00;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+.container {
+  background-size: cover;
+  font-family: sans-serif;
+  text-align: center;
+  padding-left: 15%;
+  margin: auto;
+}
+header {
+  background-color: var(--header-color);
+  color: aliceblue;
+  display: flex;
+  margin: auto;
+  border-bottom: 2px solid var(--hover--color);
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+}
+header * {
+  text-align: center;
+  display: inline;
+}
+header ul {
+  display: flex;
+  margin: auto;
+  padding-right: 20%;
+  padding-inline-start: 0;
+}
+header li {
+  margin: 10px;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+header li a {
+  padding: 10px;
+  color: aliceblue;
+  text-decoration: none;
+}
+header li a:hover {
+  color: var(--hover--color);
+}
+.logo img {
+  height: 70px;
+  width: 100%;
+  padding-left: 250%;
+}
+.logo {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+/* Main */
+.portraitZorig {
+  width: 100%;
+}
+.section_Core {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+h3 {
+  color: var(--h3-color);
+  font-family: var(--Ded-Size);
+  margin-left: -2rem;
+  font-size: 0.9rem;
+}
+h2 {
+  margin-left: -2rem;
+  font-family: var(--H2-font);
+  font-size: 1.1rem;
+}
+.section_subCore {
+  padding-top: 10%;
+}
+.medium {
+  display: flex;
+  margin-top: 10%;
+  /* padding-top: 10%;
+  padding-left: 6%;
+  padding-right: 6%; */
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+.medium_gap {
+  gap: 10%;
+}
+.scholarshipCount {
+  font-size: 2.5rem;
+  font-family: "Pass through";
+}
+.line {
+  position: relative;
+  font-size: 0.8rem;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  height: 0.1vh;
+  color: var(--header-color);
+  background-color: var(--header-color);
+  bottom: -0.5rem;
+  width: 100%;
+  left: 0;
+}
+/* Түүх */
+.dot {
+  position: relative;
+  margin-top: -5px;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background: #393c40;
+  outline: 5px solid rgba(57, 60, 64, 0.25);
+  cursor: pointer;
+}
+.dot:hover {
+  background: #3e8ae8;
+  outline: 5px solid rgba(143, 216, 242, 0.87);
+}
+.margin-negative {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.section {
+  height: 200px;
+  width: 100%;
+  background-color: #00669a;
+}
+.top-section {
+  margin-bottom: 2rem;
+}
+.bottom-section {
+  margin-top: 2rem;
+}
+.history {
+  display: flex;
+  position: relative;
+  height: 1vh;
+  border-top: 0.2vh dashed #000;
+  justify-content: space-between;
+  width: 100%;
+}
+.year-bot,
+.year-top {
+  position: absolute;
+  left: -0.7rem;
+}
+.year-bot {
+  top: 1.2rem;
+}
+.year-top {
+  bottom: 1.2rem;
+}

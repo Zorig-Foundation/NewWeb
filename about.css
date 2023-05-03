@@ -69,8 +69,8 @@ header li a:hover {
   width: 100%;
 }
 .section_Core {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 5%;
 }
 h3 {
@@ -169,7 +169,7 @@ h2 {
 /* ҮЙЛ АЖМЛЛАГАА */
 .tvxlK {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   margin-top: 4rem;
 }
 .emns_ {
@@ -177,22 +177,28 @@ h2 {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  padding: 1.7rem;
+  margin-top: 2rem;
   box-sizing: border-box;
 }
 ._1VvQx {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   /* margin-bottom: 16px; */
   color: #212b36;
   font-size: 1.2rem;
   line-height: 1.5;
 }
 .pngS {
-  width: 50%;
+  width: 30%;
+}
+@media only screen and (max-width: 1080px) {
+  .tvxlK {
+    /* display: grid; */
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (max-width: 414px) {
   .tvxlK {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
   }
 }

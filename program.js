@@ -71,6 +71,17 @@ class ProgramList extends HTMLElement {
   
             // 1 buhel categoriinhoo programuudiig haruulna
             programsContainer.innerHTML = programsHTML;
+            programsContainer.addEventListener('click', event => {
+              // get clicked program element
+              const programElement = event.target.closest('.program');
+              if (!programElement) return;
+            
+              // get program index
+              const programIndex = programElement.dataset.index;
+            
+              // navigate to corresponding HTML location
+              window.location.href = `program1.html`;
+            });
           });
         });
     }

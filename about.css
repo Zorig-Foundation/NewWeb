@@ -169,7 +169,7 @@ h2 {
 /* ҮЙЛ АЖМЛЛАГАА */
 .tvxlK {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 4rem;
 }
 .emns_ {
@@ -190,15 +190,29 @@ h2 {
 .pngS {
   width: 30%;
 }
+/* МАНАЙ БАГ */
+.team {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 4rem;
+}
+.card {
+  height: 400px;
+  background: #00669a;
+  flex: 1;
+  transition: 1s;
+}
+.card:hover {
+  flex: 3;
+  background: #002e60;
+}
 @media only screen and (max-width: 1080px) {
   .tvxlK {
-    /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 600px) {
   .tvxlK {
-    /* display: grid; */
     grid-template-columns: repeat(1, 1fr);
   }
 }

@@ -1,0 +1,66 @@
+:root {
+    --h3-color: #00669a;
+    --color--black: #000000;
+    --Ded-Size: "Noto Sans", sans-serif;
+    --H2-font: "Ubuntu", sans-serif;
+    --header-color: #002e60;
+    --hover--color: #c39a00;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+  .container {
+    background-size: cover;
+    font-family: sans-serif;
+    text-align: center;
+    padding-left: 15%;
+    margin: auto;
+  }
+  header {
+    background-color: var(--header-color);
+    color: aliceblue;
+    display: flex;
+    margin: auto;
+    border-bottom: 2px solid var(--hover--color);
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+  }
+  header * {
+    text-align: center;
+    display: inline;
+  }
+  header ul {
+    display: flex;
+    margin: auto;
+    padding-right: 20%;
+    padding-inline-start: 0;
+  }
+  header li {
+    margin: 10px;
+    font-size: 0.75rem;
+    font-family: "Roboto", sans-serif;
+  }
+  header li a {
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  header li a:hover {
+    color: var(--hover--color);
+  }
+  .logo img {
+    height: 70px;
+    width: 100%;
+    padding-left: 250%;
+  }
+  .logo {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+  }
+  

@@ -19,6 +19,7 @@ body {
   padding-left: 15%;
   margin: auto;
 }
+
 header {
   background-color: var(--header-color);
   color: aliceblue;
@@ -86,21 +87,24 @@ h2 {
   font-family: var(--H2-font);
   font-size: 1.1rem;
 }
+h4 {
+  font-family: var(--H2-font);
+  font-size: 1.1rem;
+  width: 100%;
+}
 .section_subCore {
-  padding-top: 10%;
+  /* padding-top: 8%; */
+  padding-bottom: 8%;
 }
 .medium {
   display: flex;
   margin-top: 10%;
-  /* padding-top: 10%;
-  padding-left: 6%;
-  padding-right: 6%; */
-  /* flex-wrap: wrap; */
-  width: 100%;
-}
-.medium_gap {
   gap: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  margin-left: 7%;
 }
+
 .scholarshipCount {
   font-size: 2.5rem;
   font-family: "Pass through";
@@ -110,16 +114,6 @@ h2 {
   font-size: 0.8rem;
   border-bottom: 1px solid var(--header-color);
 }
-/* .line::before {
-  content: "";
-  position: absolute;
-  height: 0.1vh;
-  color: var(--header-color);
-  background-color: var(--header-color);
-  bottom: -0.5rem;
-  width: 100%;
-  left: 0;
-} */
 /* Түүх */
 .dot {
   position: relative;
@@ -139,12 +133,7 @@ h2 {
   padding-left: 7rem;
   padding-right: 7rem;
 }
-.history_content {
-  height: 200px;
-  width: 100%;
-  background-color: #00669a;
-  margin-top: 2rem;
-}
+
 .top-section {
   margin-bottom: 2rem;
 }
@@ -158,18 +147,30 @@ h2 {
 }
 .history_content .content {
   display: none;
+  animation: history_moving 0.5s ease;
 }
-.year-bot,
-.year-top {
-  position: absolute;
-  left: -0.7rem;
+/* Түүх хэсгийн animation */
+@keyframes history_moving {
+  from {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 2;
+  }
 }
-.year-bot {
-  top: 1.2rem;
+article.content.active {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
 }
-.year-top {
-  bottom: 1.2rem;
+
+.years {
+  /* position: absolute; active үед алдаа зааж байсан*/
+  margin-left: -0.7rem;
 }
+
 /* ҮЙЛ АЖМЛЛАГАА */
 .tvxlK {
   display: grid;
@@ -178,6 +179,7 @@ h2 {
 }
 .emns_ {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   flex-direction: column;
@@ -186,13 +188,12 @@ h2 {
 }
 ._1VvQx {
   margin-top: 1rem;
-  /* margin-bottom: 16px; */
   color: #212b36;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   line-height: 1.5;
 }
 .pngS {
-  width: 30%;
+  width: 20%;
 }
 /* МАНАЙ БАГ */
 .team {
@@ -261,9 +262,15 @@ i {
   .tvxlK {
     grid-template-columns: repeat(2, 1fr);
   }
+  .medium {
+    margin-left: 0%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .tvxlK {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .medium {
+    margin-left: 0%;
   }
 }

@@ -40,8 +40,7 @@ header ul {
   padding-right: 20%;
   padding-inline-start: 0;
 }
-li {
-}
+
 header li {
   margin: 10px;
   font-size: 0.75rem;
@@ -140,16 +139,14 @@ h2 {
   padding-left: 7rem;
   padding-right: 7rem;
 }
-.section {
+.history_content {
   height: 200px;
   width: 100%;
   background-color: #00669a;
+  margin-top: 2rem;
 }
 .top-section {
   margin-bottom: 2rem;
-}
-.bottom-section {
-  margin-top: 2rem;
 }
 .history {
   display: flex;
@@ -158,6 +155,9 @@ h2 {
   border-top: 0.2vh dashed var(--color--black);
   justify-content: space-between;
   width: 100%;
+}
+.history_content .content {
+  display: none;
 }
 .year-bot,
 .year-top {

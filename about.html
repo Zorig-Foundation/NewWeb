@@ -74,31 +74,58 @@
               style="background-image: url(portrait8.jpg)"
             ></article>
           </article>
-          <!-- <article class="margin-negative"> -->
-          <article class="top-section section"></article>
           <article class="history">
             <article class="dot">
-              <span class="year-bot">2008</span>
+              <span id="tab_id" class="tab_btn year-bot">2008</span>
             </article>
             <article class="dot">
-              <span class="year-top">2009</span>
+              <span id="tab_id" class="tab_btn year-top">2009</span>
             </article>
             <article class="dot">
-              <span class="year-bot">2011</span>
+              <span id="tab_id" class="tab_btn year-bot">2011</span>
             </article>
             <article class="dot">
-              <span class="year-top">2013</span>
+              <span id="tab_id" class="tab_btn year-top">2013</span>
             </article>
             <article class="dot">
-              <span class="year-bot">2015</span>
+              <span id="tab_id" class="tab_btn year-bot">2015</span>
             </article>
           </article>
-          <article class="bottom-section section"></article>
-          <!-- </article> -->
+          <article class="history_content margin-top-2rem">
+            <article class="content">
+              <h2></h2>
+              <p>112 үүсгэн байгуулагчтайгаар анх байгуулагдсан</p>
+            </article>
+            <article class="content">
+              <h2></h2>
+              <p>
+                Зориг сан нь нийт олгосон дотоодын тэтгэлгийн тоогоороо Монголд
+                хамгийн их тэтгэлэг олгосон байгууллага болсон
+              </p>
+            </article>
+            <article class="content">
+              <h2></h2>
+              <p>Залуу манлайлал хөтөлбөрийг хэрэгжүүлж эхэлсэн</p>
+            </article>
+            <article class="content">
+              <h2></h2>
+              <p>
+                Ахисан түвшний мэргэжилтнүүдэд зориулсан хөтөлбөрийг Австралийн
+                Засгийн газартай хамтран хэрэгжүүлж эхэлсэн
+              </p>
+            </article>
+            <article class="content">
+              <h2></h2>
+              <p>
+                Жил бүр 14+ хөтөлбөрийг хэрэгжүүлэхээс гадна ӨГЛӨӨ, АЛХАМ
+                компанит ажлыг амжилттай зохион байгуулсан
+              </p>
+            </article>
+          </article>
         </section>
         <section class="section_subCore">
           <h2>ҮЙЛ АЖИЛЛАГААНИЙ ЧИГЛЭЛ</h2>
-          <article class="tvxlK">
+          <article class="tvxlK gap-1">
             <article class="emns_">
               <img
                 class="pngS"
@@ -213,6 +240,16 @@
           </article>
         </section>
       </footer>
+      <script>
+        const tabs = document.querySelectorAll(".tab_btn");
+        const all_content = document.querySelectorAll(".content");
+        tabs.forEach((tab, index) => {
+          tab.addEventListener("click", () => {
+            console.log(active);
+            tab.classList.add("active");
+          });
+        });
+      </script>
     </main>
   </body>
 </html>

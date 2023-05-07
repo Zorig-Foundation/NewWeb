@@ -115,6 +115,38 @@ h4 {
   border-bottom: 1px solid var(--header-color);
 }
 /* Түүх */
+.team {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.card {
+  height: 400px;
+  background: #00669a;
+  flex: 1;
+  transition: 0.6s;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  flex: 3;
+  transition: 0.5s ease;
+  background-image: none;
+}
+.inf_common {
+  visibility: hidden;
+  opacity: 0;
+  color: var(--color-white);
+}
+.card:hover .inf_common {
+  opacity: 1;
+  visibility: visible;
+  /* backdrop-filter: invert(70%); */
+}
+/* Түүхийн он */
 .dot {
   position: relative;
   margin-top: -5px;
@@ -145,9 +177,13 @@ h4 {
   justify-content: space-between;
   width: 100%;
 }
+
 .history_content .content {
   display: none;
   animation: history_moving 0.5s ease;
+}
+.histor_information {
+  text-justify: auto;
 }
 /* Түүх хэсгийн animation */
 @keyframes history_moving {
@@ -165,10 +201,15 @@ article.content.active {
   gap: 2rem;
   margin: 1rem;
 }
+article.history.active {
+  background: #3e8ae8;
+  outline: 5px solid rgba(143, 216, 242, 0.87);
+}
 
 .years {
   /* position: absolute; active үед алдаа зааж байсан*/
   margin-left: -0.7rem;
+  margin-top: 3rem;
 }
 
 /* ҮЙЛ АЖМЛЛАГАА */
@@ -189,29 +230,14 @@ article.content.active {
 ._1VvQx {
   margin-top: 1rem;
   color: #212b36;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .pngS {
   width: 20%;
 }
 /* МАНАЙ БАГ */
-.team {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-.card {
-  height: 400px;
-  background: #00669a;
-  flex: 1;
-  transition: 0.6s;
-  background-size: cover;
-}
-.card:hover {
-  flex: 3;
-}
+
 /* Footer */
 li {
   list-style: none;
@@ -252,6 +278,7 @@ a {
 .padding-bottom-1rem {
   padding-bottom: 0.5rem;
 }
+
 i {
   color: var(--color-white);
 }
@@ -266,11 +293,52 @@ i {
     margin-left: 0%;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsiveUyed {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .tvxlK {
     grid-template-columns: repeat(1, 1fr);
   }
   .medium {
     margin-left: 0%;
+    flex-direction: column;
+  }
+  .line {
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+  .medium-1 {
+    width: 73%;
+  }
+  .team {
+    display: grid;
+  }
+  .card {
+    width: 100%;
+  }
+  .history {
+    height: 100%;
+    flex-direction: column;
+    width: 10%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+
+  .ballon_history {
+    display: flex;
+  }
+  .responsiveUyed {
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }

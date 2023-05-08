@@ -176,11 +176,11 @@ section a {
   box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
 }
 .check {
-  width: 55%;
+  width: 40%;
 }
 .program_information {
-  width: 45%;
-  background-color: aqua;
+  width: 60%;
+  /* background-color: #9a9da0; */
 }
 .check_titles h2 {
   color: var(--color--gold);
@@ -244,16 +244,52 @@ section a {
 .news .news_png {
   width: 300%;
   height: 100%;
-  background-color: #00669a;
+  /* background-color: #00669a; */
 }
 .news .news_png img {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 .news_information {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
+}
+.news_information h5 {
+  font-size: 1rem;
+  color: var(--header-color);
+  animation: blink 1.5s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.news_information a h1 {
+  font-size: 2.5rem;
+  margin-top: -0.3rem;
+  margin-bottom: -0.1rem;
+  text-align: start;
+  color: var(--color--black);
+}
+.news_information p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+.buttomLink {
+  background-color: var(--color--main);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: 20px;
+  padding: 1rem;
+  width: 150px;
 }
 @media (max-width: 800px) {
   /* Header */

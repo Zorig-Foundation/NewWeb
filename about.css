@@ -6,6 +6,10 @@
   --header-color: #002e60;
   --hover--color: #c39a00;
   --color-white: #fff;
+  --color--on-dardag: rgba(143, 216, 242, 0.87);
+  --color--chiglel: #212b36;
+  --color--toggle: #0d2e52;
+  --color--footer-bc: #01162c;
 }
 body {
   margin: 0;
@@ -19,6 +23,7 @@ body {
   padding-left: 15%;
   margin: auto;
 }
+
 header {
   background-color: var(--header-color);
   color: aliceblue;
@@ -40,7 +45,8 @@ header ul {
   padding-right: 20%;
   padding-inline-start: 0;
 }
-li {
+a {
+  text-decoration: none;
 }
 header li {
   margin: 10px;
@@ -50,21 +56,33 @@ header li {
 header li a {
   padding: 10px;
   color: aliceblue;
-  text-decoration: none;
 }
 header li a:hover {
   color: var(--hover--color);
 }
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
 .logo img {
   height: 70px;
   width: 100%;
-  padding-left: 250%;
+  margin: 0.5rem;
 }
 .logo {
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: auto;
+}
+header p {
+  display: none;
+  margin: 1.5rem 1.5rem 1.5rem 2rem;
 }
 
 /* Main */
@@ -87,21 +105,24 @@ h2 {
   font-family: var(--H2-font);
   font-size: 1.1rem;
 }
+h4 {
+  font-family: var(--H2-font);
+  font-size: 1.1rem;
+  width: 100%;
+}
 .section_subCore {
-  padding-top: 10%;
+  /* padding-top: 8%; */
+  padding-bottom: 8%;
 }
 .medium {
   display: flex;
   margin-top: 10%;
-  /* padding-top: 10%;
-  padding-left: 6%;
-  padding-right: 6%; */
-  /* flex-wrap: wrap; */
-  width: 100%;
-}
-.medium_gap {
   gap: 10%;
+  margin-bottom: 10%;
+  width: 100%;
+  margin-left: 7%;
 }
+
 .scholarshipCount {
   font-size: 2.5rem;
   font-family: "Pass through";
@@ -111,17 +132,37 @@ h2 {
   font-size: 0.8rem;
   border-bottom: 1px solid var(--header-color);
 }
-/* .line::before {
-  content: "";
-  position: absolute;
-  height: 0.1vh;
-  color: var(--header-color);
-  background-color: var(--header-color);
-  bottom: -0.5rem;
-  width: 100%;
-  left: 0;
-} */
 /* Түүх */
+.team {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.card {
+  height: 400px;
+  flex: 1;
+  transition: 0.6s;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  flex: 3;
+  transition: 0.5s ease;
+  background-image: none;
+}
+.inf_common {
+  visibility: hidden;
+  opacity: 0;
+  color: var(--color-white);
+}
+.card:hover .inf_common {
+  opacity: 1;
+  visibility: visible;
+}
+/* Түүхийн он */
 .dot {
   position: relative;
   margin-top: -5px;
@@ -134,22 +175,15 @@ h2 {
 }
 .dot:hover {
   background: #3e8ae8;
-  outline: 5px solid rgba(143, 216, 242, 0.87);
+  outline: 5px solid var(--color--on-dardag);
 }
 .margin-negative {
   padding-left: 7rem;
   padding-right: 7rem;
 }
-.section {
-  height: 200px;
-  width: 100%;
-  background-color: #00669a;
-}
+
 .top-section {
   margin-bottom: 2rem;
-}
-.bottom-section {
-  margin-top: 2rem;
 }
 .history {
   display: flex;
@@ -159,17 +193,41 @@ h2 {
   justify-content: space-between;
   width: 100%;
 }
-.year-bot,
-.year-top {
-  position: absolute;
-  left: -0.7rem;
+
+.history_content .content {
+  display: none;
+  animation: history_moving 0.5s ease;
 }
-.year-bot {
-  top: 1.2rem;
+.histor_information {
+  text-justify: auto;
 }
-.year-top {
-  bottom: 1.2rem;
+/* Түүх хэсгийн animation */
+@keyframes history_moving {
+  from {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 2;
+  }
 }
+article.content.active {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+}
+article.history.active {
+  background: #3e8ae8;
+  outline: 5px solid var(--color--on-dardag);
+}
+
+.years {
+  /* position: absolute; active үед алдаа зааж байсан*/
+  margin-left: -0.7rem;
+  margin-top: 3rem;
+}
+
 /* ҮЙЛ АЖМЛЛАГАА */
 .tvxlK {
   display: grid;
@@ -178,6 +236,7 @@ h2 {
 }
 .emns_ {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
   flex-direction: column;
@@ -186,38 +245,25 @@ h2 {
 }
 ._1VvQx {
   margin-top: 1rem;
-  /* margin-bottom: 16px; */
-  color: #212b36;
-  font-size: 1.2rem;
+  color: var(--color--chiglel);
+  font-size: 1rem;
   line-height: 1.5;
 }
 .pngS {
-  width: 30%;
+  width: 20%;
 }
 /* МАНАЙ БАГ */
-.team {
-  display: flex;
-  gap: 0.5rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-.card {
-  height: 400px;
-  background: #00669a;
-  flex: 1;
-  transition: 0.6s;
-  background-size: cover;
-}
-.card:hover {
-  flex: 3;
-}
+
 /* Footer */
 li {
   list-style: none;
 }
+ul li a {
+  color: var(--color-white);
+}
 .footer-main {
   width: 100%;
-  background-color: #002e60;
+  background-color: var(--color--footer-bc);
 }
 
 .flex-wrap {
@@ -243,7 +289,7 @@ li {
   margin-left: 0;
 }
 .border-bottom {
-  border-bottom: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--hover--color);
 }
 a {
   text-decoration: none;
@@ -251,6 +297,7 @@ a {
 .padding-bottom-1rem {
   padding-bottom: 0.5rem;
 }
+
 i {
   color: var(--color-white);
 }
@@ -261,9 +308,87 @@ i {
   .tvxlK {
     grid-template-columns: repeat(2, 1fr);
   }
+  .medium {
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* Header css */
+  .toggle-button {
+    display: flex;
+  }
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+  header p {
+    display: flex;
+  }
+  header ul {
+    display: none;
+  }
+  header ul li {
+    font-size: 1rem;
+  }
+  header ul.active {
+    display: flex;
+    background-color: var(--color--toggle);
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 3px solid var(--hover--color);
+  }
+  /* Mdhgue  */
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsiveUyed {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .tvxlK {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .medium {
+    margin-left: 0%;
+    flex-direction: column;
+  }
+  .line {
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+  .medium-1 {
+    width: 73%;
+  }
+  .team {
+    display: grid;
+  }
+  .card {
+    width: 100%;
+  }
+  .history {
+    height: 100%;
+    flex-direction: column;
+    width: 10%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+
+  .ballon_history {
+    display: flex;
+  }
+  .responsiveUyed {
+    margin-left: 30%;
+    margin-right: 30%;
   }
 }

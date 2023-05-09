@@ -258,6 +258,9 @@ article.history.active {
 li {
   list-style: none;
 }
+ul li a {
+  color: var(--color-white);
+}
 .footer-main {
   width: 100%;
   background-color: var(--color--footer-bc);

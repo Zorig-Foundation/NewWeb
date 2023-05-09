@@ -1,3 +1,4 @@
+
 class hutulbur{
     constructor(program){
         this.name = program.name;

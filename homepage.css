@@ -293,6 +293,7 @@ header p {
   border-radius: 20px;
   padding: 1rem;
   width: 150px;
+  text-align: center;
 }
 
 /* Footer */

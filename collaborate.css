@@ -5,6 +5,9 @@
     --H2-font: "Ubuntu", sans-serif;
     --header-color: #002e60;
     --hover--color: #c39a00;
+    --color-white: #fff;
+    --color--toggle: #0d2e52;
+    --color--footer-bc: #01162c;
   }
   body {
     margin: 0;
@@ -100,3 +103,62 @@ h3 {
   .garchig {
     padding-top: 80px;
   }
+
+  li {
+    list-style: none;
+  }
+  ul li a {
+    color: var(--color-white);
+  }
+  .footer-main {
+    width: 100%;
+    background-color: var(--color--footer-bc);
+  }
+  
+  .flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-just-spa-even {
+    justify-content: space-evenly;
+  }
+  .margin-top-4rem {
+    margin-top: 4rem;
+  }
+  .grid {
+    display: grid;
+  }
+  .gap-1 {
+    gap: 1rem;
+  }
+  .color-white {
+    color: var(--color-white);
+  }
+  .margin-negative-0 {
+    margin-left: 0;
+  }
+  .border-bottom {
+    border-bottom: 1px solid var(--hover--color);
+  }
+  a {
+    text-decoration: none;
+  }
+  .padding-bottom-1rem {
+    padding-bottom: 0.5rem;
+  }
+  
+  i {
+    color: var(--color-white);
+  }
+  .icons {
+    padding: 3rem 7% 3rem 7%;
+  }
+  @media only screen and (max-width: 1080px) {
+    .tvxlK {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .medium {
+      margin-left: 0%;
+    }
+  }
+  

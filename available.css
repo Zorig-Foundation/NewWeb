@@ -70,22 +70,29 @@ ul.back{
     padding-left: 5%;
     gap: 5%;
 }
-.side div{
-    border-style: cornered; 
-    border-width: 2px;
-    margin-bottom: 5%; 
-    box-shadow: 2px 2px 2px #00000040;
-    border-top-style: solid;
-    border-top-color: #c39a00;
-    text-align: center;
-}
-.detail h1,p{
-   
+
+.detail{
+  border-style: cornered; 
+  border-width: 2px;
+  margin-bottom: 5%; 
+  box-shadow: 2px 2px 2px #00000040;
+  border-top-style: solid;
+  border-top-color: #c39a00;
+  text-align: center;
+  width: 30%;
 }
 .detail section{
     display: flex;
+    margin: auto;
+    gap: 5%;
+    padding-left: 10%;
 }
 .aside div{
     border-style: solid;
     border-color: #000000;
+}
+#side{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
 }

@@ -94,4 +94,7 @@ class Hutulbur {
   
   // Render the initial items
   updateItems();
-  
+  const link = document.getElementById('back');
+  link.addEventListener('click', () =>{
+    window.location.href = 'collaborate.html';
+  })

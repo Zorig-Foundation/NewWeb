@@ -76,25 +76,25 @@ class Hutulbur {
       });
   }
   
-  // Add event listeners to all links on the page huudasniihaa buh link
+  //huudasniihaa buh linkend event listener nemeh
   const links = document.getElementsByTagName('a');
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', (event) => {
-      // Prevent the default behavior of the link
+      // linknii default baidliig hadgalah
       event.preventDefault();
   
-      // Get the category from the link's href attribute
+      // linknii hreg attributaas categoriig awah
       const linkCategory = links[i].getAttribute('href').split('=')[1];
   
-      // Update the selected category and re-render the items
+      //selected categoriig uurchluud render hiine
       selectedCategory = linkCategory;
       updateItems();
     });
   }
   
-  // Render the initial items
+  // anhnii itemuudiig renderlene
   updateItems();
   const link = document.getElementById('back');
   link.addEventListener('click', () =>{
-    window.location.href = 'collaborate.html';
+    window.location.href = 'collaborate1.html';
   })

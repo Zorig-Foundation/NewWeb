@@ -51,6 +51,7 @@ class ProgramList extends HTMLElement {
           itemsContainer.innerHTML = itemsHTML;
           itemsContainer.addEventListener('click', event => {
             // darsan itemaa olno
+            window.scrollTo(0, 0);
             const item = event.target.closest('.item');
             if (!item) return;
   

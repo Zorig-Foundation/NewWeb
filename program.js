@@ -67,7 +67,7 @@ class ProgramList extends HTMLElement {
                   <p style=" font-family: 'Roboto', sans-serif; font-size:10px; color: grey;">Эхлэх: ${program.start}, Дуусах: ${program.end}</p>
                 </div>
               `;
-            });
+            });                   
   
             // 1 buhel categoriinhoo programuudiig haruulna
             programsContainer.innerHTML = programsHTML;

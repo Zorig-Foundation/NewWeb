@@ -52,7 +52,7 @@ a {
 }
 header li {
   margin: 10px;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
   
 }
@@ -116,7 +116,7 @@ header p {
   font-family: "roboto", sans-serif;
   font-size: 2.5rem;
   font-weight: 0.1rem;
-  width: 29%;
+  width: 40%;
 
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--hover--color);
@@ -174,15 +174,16 @@ header p {
 }
 .checkAndInf {
   display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #efefef;
   box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
 }
 .check {
-  width: 40%;
+  width: 100%;
 }
 .program_information {
-  width: 60%;
+  width: 100%;
   /* background-color: #9a9da0; */
 }
 .check_titles h2 {
@@ -304,7 +305,9 @@ li {
   width: 100%;
   background-color: var(--color--footer-bc);
 }
-
+.hover:hover {
+  color: var(--hover--color);
+}
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -343,6 +346,19 @@ i {
 .icons {
   padding: 3rem 7% 3rem 7%;
 }
+
+@media (max-width: 1100px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .welcome {
+    width: 100%;
+    margin: 10% 10% 10% 10%;
+  }
+  .homepicture {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   /* Header */
   .toggle-button {
@@ -374,13 +390,20 @@ i {
     padding-bottom: 1rem;
     border-top: 3px solid var(--hover--color);
   }
-  /* Main */
-  .container {
-    /* flex-direction: wrap; */
-  }
+
+  /* Footer */
   .responsiveUyed {
     margin-left: 35%;
     margin-right: 35%;
+  }
+  /* Main */
+
+  .homepicture img {
+    width: 100%;
+  }
+  .welcome {
+    width: 50%;
+    margin: 10% 1% 5% 15%;
   }
 }
 @media (max-width: 600px) {

@@ -50,7 +50,7 @@ a {
 }
 header li {
   margin: 10px;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
 }
 header li a {
@@ -265,7 +265,9 @@ ul li a {
   width: 100%;
   background-color: var(--color--footer-bc);
 }
-
+.hover:hover {
+  color: var(--hover--color);
+}
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;

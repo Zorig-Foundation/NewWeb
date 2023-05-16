@@ -16,7 +16,7 @@ class ProgramList extends HTMLElement {
         }
         </style>
         <section id="sub-container" style="display: inline-flex; padding-left: 100px; justify-content: center; flex-direction: row; gap: 3%; flex-wrap: wrap; width: 50%; margin: auto; "></section>
-        <section id="aside" style="display: flex; padding-right: 130px; width: 30%; flex-direction: column;"></section>
+        <section id="aside" style="display: flex; gap: 5%; padding-right: 130px; width: 30%; flex-direction: column;"></section>
       `;
   
       // 1 buhel item bolon dotorh hutulburuuddee zaalt uusgene
@@ -63,10 +63,11 @@ class ProgramList extends HTMLElement {
             let programsHTML = '';
             programData.forEach(program => {
               programsHTML += `
-                <div class="program" style=" padding: 3%; border-bottom-style: dotted; border-bottom-width: 1px; border-bottom-color: #002e60">
-                  <h3>${program.name_}</h3>
-                  <p style=" font-family: 'Roboto', sans-serif; font-size:10px; color: grey;">Эхлэх: ${program.start}, Дуусах: ${program.end}</p>
-                </div>
+                  <div class="program" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; padding: 3%;">
+                    <h3>${program.name_}</h3>
+                    <p style=" font-family: 'Roboto', sans-serif; font-size:10px; color: grey;">Эхлэх: ${program.start}, Дуусах: ${program.end}</p>
+                  </div>
+               
               `;
             });                   
   

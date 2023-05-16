@@ -42,7 +42,7 @@ class Hutulbur {
     selectedCategory = null;
     updateItems();
   });
-  
+  selectedCategory = new URLSearchParams(window.location.search).get('category');
   // songogdson categoroosoo shaltgaalan filter hiigdeh
   function updateItems() {
     const container = document.getElementById('side');
@@ -75,26 +75,13 @@ class Hutulbur {
         });
       });
   }
+
   
-  //huudasniihaa buh linkend event listener nemeh
-  const links = document.getElementsByTagName('a');
-  for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', (event) => {
-      // linknii default baidliig hadgalah
-      event.preventDefault();
   
-      // linknii hreg attributaas categoriig awah
-      const linkCategory = links[i].getAttribute('href').split('=')[1];
-  
-      //selected categoriig uurchluud render hiine
-      selectedCategory = linkCategory;
-      updateItems();
-    });
-  }
   
   // anhnii itemuudiig renderlene
   updateItems();
   const link = document.getElementById('back');
   link.addEventListener('click', () =>{
-    window.location.href = 'collaborate1.html';
+    window.location.href = 'collaborate.html';
   })

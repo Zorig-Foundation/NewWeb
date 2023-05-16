@@ -1,5 +1,5 @@
 :root {
-<<<<<<< HEAD:collaborate.css
+
   --h3-color: #00669a;
   --color--black: #000000;
   --Ded-Size: "Noto Sans", sans-serif;
@@ -141,21 +141,15 @@ i {
   .toggle-button {
     display: flex;
   }
-=======
-    --h3-color: #00669a;
-    --color--black: #000000;
-    --Ded-Size: "Noto Sans", sans-serif;
-    --H2-font: "Ubuntu", sans-serif;
-    --header-color: #002e60;
-    --hover--color: #c39a00;
-  }
+
+}
+  
   body {
     margin: 0;
     padding: 0;
     display: grid;
   }
 
->>>>>>> eb6d5bb961569dd4e2a8665cff5fdc48e2925f1a:available.css
   header {
     width: 100%;
     flex-direction: column;
@@ -163,42 +157,7 @@ i {
   .logo {
     display: none;
   }
-<<<<<<< HEAD:collaborate.css
-  header p {
-    display: flex;
-  }
-  header ul {
-    display: none;
-  }
-  header ul li {
-    font-size: 1rem;
-  }
-  header ul.active {
-    display: flex;
-    background-color: var(--color--toggle);
-    width: 100%;
-    flex-direction: column;
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-top: 3px solid var(--hover--color);
-  }
-  /* Main */
-  .container {
-    /* flex-direction: wrap; */
-  }
 
-  .responsiveUyed {
-    margin-left: 35%;
-    margin-right: 35%;
-  }
-}
-@media (max-width: 600px) {
-  .responsiveUyed {
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-=======
 main{
     padding-top: 7%;
     
@@ -237,5 +196,5 @@ ul.back{
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
->>>>>>> eb6d5bb961569dd4e2a8665cff5fdc48e2925f1a:available.css
+
 }

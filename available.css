@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD:collaborate.css
   --h3-color: #00669a;
   --color--black: #000000;
   --Ded-Size: "Noto Sans", sans-serif;
@@ -140,6 +141,21 @@ i {
   .toggle-button {
     display: flex;
   }
+=======
+    --h3-color: #00669a;
+    --color--black: #000000;
+    --Ded-Size: "Noto Sans", sans-serif;
+    --H2-font: "Ubuntu", sans-serif;
+    --header-color: #002e60;
+    --hover--color: #c39a00;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+  }
+
+>>>>>>> eb6d5bb961569dd4e2a8665cff5fdc48e2925f1a:available.css
   header {
     width: 100%;
     flex-direction: column;
@@ -147,6 +163,7 @@ i {
   .logo {
     display: none;
   }
+<<<<<<< HEAD:collaborate.css
   header p {
     display: flex;
   }
@@ -181,4 +198,44 @@ i {
     margin-left: 30%;
     margin-right: 30%;
   }
+=======
+main{
+    padding-top: 7%;
+    
+}
+ul.back{
+    display: flex;
+    gap: 5%;
+}
+.container{
+    display: flex;
+    padding-left: 5%;
+    gap: 5%;
+}
+
+.detail{
+  border-style: cornered; 
+  border-width: 2px;
+  margin-bottom: 5%; 
+  box-shadow: 2px 2px 2px #00000040;
+  border-top-style: solid;
+  border-top-color: #c39a00;
+  text-align: center;
+  width: 30%;
+}
+.detail section{
+    display: flex;
+    margin: auto;
+    gap: 5%;
+    padding-left: 10%;
+}
+.aside div{
+    border-style: solid;
+    border-color: #000000;
+}
+#side{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+>>>>>>> eb6d5bb961569dd4e2a8665cff5fdc48e2925f1a:available.css
 }

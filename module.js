@@ -19,15 +19,15 @@ class Hutulbur {
     }
   }
   
-  // Get the category buttons
+  // category buttongoo awna
   const hutulburBtn = document.getElementById('hutulbur');
   const tetgelegBtn = document.getElementById('tetgeleg');
   const allBtn = document.getElementById('all');
   
-  // Initialize selected category as null to show all items by default
+  // selected category ni daragdaagui null utgatai baihad buh hutulburuud gardag bhr ehluulne
   let selectedCategory = null;
   
-  // Add event listeners to the category buttons
+  // tuhain neg button deer darah
   hutulburBtn.addEventListener('click', () => {
     selectedCategory = 'hutulbur';
     updateItems();
@@ -43,16 +43,16 @@ class Hutulbur {
     updateItems();
   });
   
-  // Function to update the displayed items based on the selected category
+  // songogdson categoroosoo shaltgaalan filter hiigdeh
   function updateItems() {
     const container = document.getElementById('side');
     container.innerHTML = '';
   
-    // Get the current URL and split it into parts
+    // odoo bgaa URL-iig awah, hesguuded zadlah
     const currentUrl = window.location.href;
     const urlParts = currentUrl.split('?');
   
-    // Construct the new URL with the selected category parameter
+    // selected category parametertai shine URL uusgeh
     let newUrl;
     if (selectedCategory) {
       newUrl = `${urlParts[0]}?category=${selectedCategory}`;
@@ -60,10 +60,10 @@ class Hutulbur {
       newUrl = urlParts[0];
     }
   
-    // Update the URL without reloading the page
+    // huudsaa dahin achaallahguigeer URL-aa shinechleh 
     window.history.pushState({ path: newUrl }, '', newUrl);
   
-    // Fetch data from the API and render the items
+    // API-aas data-gaa fetch hiigeed, itemuudaa renderleh
     fetch('https://api.jsonbin.io/v3/b/645641e3b89b1e22999831bf/latest')
       .then(response => response.json())
       .then(data => {
@@ -76,7 +76,7 @@ class Hutulbur {
       });
   }
   
-  // Add event listeners to all links on the page
+  // Add event listeners to all links on the page huudasniihaa buh link
   const links = document.getElementsByTagName('a');
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', (event) => {

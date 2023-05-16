@@ -27,28 +27,49 @@ program-list {
   display: flex;
   flex-direction: row;
   margin: auto;
-  margin-top: 3rem;
-}
-* {
-  font-family: 'Poppins', sans-serif;
-  padding: 0;
-  margin: 0;
+  margin-top: 1rem;
 }
 
-.search-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding-top: 10%;
+.top{
+  background-color: #002e60;
+display: flex;
+  padding: 5%;
+
 }
-input[type="text"] {
-  display: block;
-  width: calc(100% - 24px); /*20px [ left & Right ] padding + 4px border [ left & Right ] */ 
+.top p{
+  margin: 4rem 15% 4rem 5%;
+    font-size: 1.5rem;
+    font-weight: 550;
+    font-family: "Source Serif Pro", serif;
+    color: #c39a00;
+  
+    width: 100%;
+padding-top: 5%;
+    text-align: center;
+    justify-content: center;
+
+}
+.search-box{
+  padding-top:9%;
+  
+
+}
+.input-search{
+
+  height: 50px;
+  width: 50px;
+  border-style: none;
+ 
   font-size: 18px;
-  font-weight: 600;
-  color: #4b00ff;
-  padding: 10px;
-  border: 2px solid #4b00ff;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
 }
+
 header {
   background-color: var(--header-color);
   color: aliceblue;

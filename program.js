@@ -16,7 +16,7 @@ class ProgramList extends HTMLElement {
         }
         </style>
         <section id="sub-container" style="display: inline-flex; padding-left: 100px; justify-content: center; flex-direction: row; gap: 3%; flex-wrap: wrap; width: 50%; margin: auto; "></section>
-        <section id="aside" style="display: flex; padding-right: 130px; width: 30%; flex-direction: column;"></section>
+        <section id="aside" style="display: flex; gap: 5%; padding-right: 130px; width: 30%; flex-direction: column;"></section>
       `;
   
       // 1 buhel item bolon dotorh hutulburuuddee zaalt uusgene
@@ -51,6 +51,7 @@ class ProgramList extends HTMLElement {
           itemsContainer.innerHTML = itemsHTML;
           itemsContainer.addEventListener('click', event => {
             // darsan itemaa olno
+            window.scrollTo(0, 0);
             const item = event.target.closest('.item');
             if (!item) return;
   
@@ -62,24 +63,23 @@ class ProgramList extends HTMLElement {
             let programsHTML = '';
             programData.forEach(program => {
               programsHTML += `
-                <div class="program" style=" padding: 3%; border-bottom-style: dotted; border-bottom-width: 1px; border-bottom-color: #002e60">
-                  <h3>${program.name_}</h3>
-                  <p style=" font-family: 'Roboto', sans-serif; font-size:10px; color: grey;">Эхлэх: ${program.start}, Дуусах: ${program.end}</p>
-                </div>
+                  <div class="program" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; padding: 3%;">
+                    <h3>${program.name_}</h3>
+                    <p style=" font-family: 'Roboto', sans-serif; font-size:10px; color: grey;">Эхлэх: ${program.start}, Дуусах: ${program.end}</p>
+                  </div>
+               
               `;
-            });
+            });                   
   
             // 1 buhel categoriinhoo programuudiig haruulna
             programsContainer.innerHTML = programsHTML;
             programsContainer.addEventListener('click', event => {
-              // get clicked program element
+              // darsan programiinhaa elementiig awna
               const programElement = event.target.closest('.program');
               if (!programElement) return;
             
-              // get program index
+              // programin indexiig awna
               const programIndex = programElement.dataset.index;
-            
-              // navigate to corresponding HTML location
               window.location.href = `program1.html`;
             });
           });

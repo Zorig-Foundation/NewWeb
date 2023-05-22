@@ -54,7 +54,6 @@ header li {
   margin: 10px;
   font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
-  
 }
 
 header li a {
@@ -116,7 +115,7 @@ header p {
   font-family: "roboto", sans-serif;
   font-size: 2.5rem;
   font-weight: 0.1rem;
-  width: 40%;
+  width: 80%;
 
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--hover--color);
@@ -174,16 +173,16 @@ header p {
 }
 .checkAndInf {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   width: 100%;
   background-color: #efefef;
   box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
 }
 .check {
-  width: 100%;
+  width: 45%;
 }
 .program_information {
-  width: 100%;
+  width: 55%;
   /* background-color: #9a9da0; */
 }
 .check_titles h2 {
@@ -191,7 +190,7 @@ header p {
 }
 .check_titles {
   padding-left: 10%;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 .check_titles p {
   color: var(--header-color);
@@ -206,8 +205,10 @@ header p {
 }
 .check_submit {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 3rem;
+  gap: 4px;
   /* flex үед margin padding анхаар */
   /* padding-left: 10%;
   padding-right: 10%; */
@@ -218,6 +219,7 @@ header p {
   width: 25rem;
   border-radius: 10px;
   border-color: var(--header-color);
+  flex: 1 0 270px;
 }
 .check_submit input::placeholder {
   color: var(--color--black);
@@ -229,6 +231,8 @@ header p {
   padding: 8px 30px;
   border-radius: 8px;
   color: var(--color-white);
+  flex: 1 0 30px;
+  margin-right: 1rem;
 }
 .check_submit button:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
@@ -236,8 +240,8 @@ header p {
 }
 .check_information {
   width: 75%;
-  height: 300px;
-  background-color: #002e60;
+  height: 250px;
+  background-color: #9fa2a5;
   margin: 5% 5% 5% 10%;
 }
 .news {
@@ -277,7 +281,7 @@ header p {
   }
 }
 .news_information a h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: -0.3rem;
   margin-bottom: -0.1rem;
   text-align: start;
@@ -285,7 +289,7 @@ header p {
 }
 .news_information p {
   margin-top: 1.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .buttomLink {
   background-color: var(--color--main);
@@ -358,6 +362,16 @@ i {
   .homepicture {
     display: none;
   }
+  .checkAndInf {
+    flex-direction: column;
+  }
+  .check {
+    width: 100%;
+  }
+  .program_information {
+    width: 100%;
+    /* background-color: #9a9da0; */
+  }
 }
 @media (max-width: 800px) {
   /* Header */
@@ -402,13 +416,28 @@ i {
     width: 100%;
   }
   .welcome {
-    width: 50%;
+    width: 80%;
     margin: 10% 1% 5% 15%;
+  }
+  .news {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 600px) {
   .responsiveUyed {
     margin-left: 30%;
     margin-right: 30%;
+  }
+  .check_submit {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 514px) {
+  .check_submit button {
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+  .check_information {
+    margin: 15% 5% 5% 10%;
   }
 }

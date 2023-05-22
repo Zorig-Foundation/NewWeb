@@ -17,6 +17,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
+  
 }
 a{
   text-decoration: none;
@@ -91,6 +92,7 @@ header p {
   display: none;
   margin: 1.5rem 1.5rem 1.5rem 2rem;
 }
+
 @media (max-width: 800px) {
   /* Header */
   .toggle-button {
@@ -123,18 +125,20 @@ header p {
     border-top: 3px solid var(--hover--color);
   }}
 
-main{
-  padding-top: 7%;
-  
-}
+
 ul.back{
+  font-family: 'Mulish', sans-serif;
   display: flex;
   gap: 5%;
+  background-color: white;
 }
 .container{
-  display: flex;
-  padding-left: 5%;
+  font-family: 'Mulish', sans-serif;
+  font-size: small;
+  
   gap: 5%;
+  display: flex;
+  padding-top: 15%;
 }
 .side div{
   border-style: cornered; 
@@ -144,39 +148,203 @@ ul.back{
   border-top-style: solid;
   border-top-color: #c39a00;
   text-align: center;
+  
 }
-.detail h1,p{
- 
+.aside{
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  position: fixed;
+  padding-left: 5%;
+  
+}
+#side{
+  width: 70%;
+  padding-left: 25%;
+  
 }
 .detail section{
   display: flex;
 }
-.aside div{
-  border-style: solid;
-  border-color: #000000;
+
+.back{
+  margin-top: 8.7%;
+  padding: 1%;
+}
+.back div{
+  font-size: 20px;
+  
+}
+ul.back{
+  border-bottom-style: solid;
+  border-width: 1px;
+  position: fixed;
+  width: 100%;
 }
 .detail{
-  border-style: cornered; 
-  border-width: 2px;
-  margin-bottom: 5%; 
-  box-shadow: 2px 2px 2px #00000040;
-  border-top-style: solid;
-  border-top-color: #c39a00;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 3%;
   text-align: center;
-  width: 30%;
+  width: 40%;
 }
+
 .detail section{
     display: flex;
     margin: auto;
     gap: 5%;
     padding-left: 10%;
+    
+}
+.detail h1{
+  background-color: #e1ecf4;
+  border-radius: 3px;
 }
 .aside div{
-    border-style: solid;
-    border-color: #000000;
+  align-items: center;
+    background: #FFFFFF;
+    border: 0 solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    color: #1A202C;
+    display: inline-flex;
+    
+    font-size: 1rem;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    padding: 24px;
+    text-decoration: none;
+    width: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-bottom-style: solid;
+  border-width: 1px;
 }
+
 #side{
   display: flex;
   flex-wrap: wrap;
-  gap: 10%;
+  gap: 3%;
+}
+.back li a {
+  color: #000000;
+}
+li{
+  list-style: none;
+}
+.footer-main {
+  width: 100%;
+  background-color: var(--color--footer-bc);
+}
+.hover:hover {
+  color: var(--hover--color);
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-just-spa-even {
+  justify-content: space-evenly;
+}
+.margin-top-4rem {
+  margin-top: 4rem;
+}
+.grid {
+  display: grid;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.color-white {
+  color: var(--color-white);
+}
+.margin-negative-0 {
+  margin-left: 0;
+}
+.border-bottom {
+  border-bottom: 1px solid var(--hover--color);
+}
+a {
+  text-decoration: none;
+}
+.padding-bottom-1rem {
+  padding-bottom: 0.5rem;
+}
+
+i {
+  color: var(--color-white);
+}
+.icons {
+  padding: 3rem 7% 3rem 7%;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .welcome {
+    width: 100%;
+    margin: 10% 10% 10% 10%;
+  }
+  .homepicture {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  /* Header */
+  .toggle-button {
+    display: flex;
+  }
+  header {
+    width: 100%;
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+  header p {
+    display: flex;
+  }
+  header ul {
+    display: none;
+  }
+  header ul li {
+    font-size: 1rem;
+  }
+  header ul.active {
+    display: flex;
+    background-color: var(--color--toggle);
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 3px solid var(--hover--color);
+  }
+
+  /* Footer */
+  .responsiveUyed {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+  /* Main */
+
+  .homepicture img {
+    width: 100%;
+  }
+  .welcome {
+    width: 50%;
+    margin: 10% 1% 5% 15%;
+  }
+}
+@media (max-width: 600px) {
+  .responsiveUyed {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
 }

@@ -9,10 +9,9 @@ class Hutulbur {
       return `
         <div class="detail">
           <h1>${this.name}</h1>
-          <p>#${this.category}</p>
           <section>
-            <p>Тэтгэлэгийн хэмжээ: ${this.number}</p>
-            <p>Дүн: ${this.hemjee}</p>
+            <p class="p1">Тэтгэлэгийн хэмжээ: ${this.number}</p>
+            <p class="p2">Дүн: ${this.hemjee}</p>
           </section>
         </div>
       `;

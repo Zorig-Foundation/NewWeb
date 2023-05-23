@@ -9,21 +9,17 @@
   --color--on-dardag: rgba(143, 216, 242, 0.87);
   --color--chiglel: #212b36;
   --color--toggle: #0d2e52;
+  --color--main: #073362;
+  --color--gold: rgba(195, 154, 0, 255);
   --color--footer-bc: #01162c;
+  --color--hover-inf: #37306b;
+  --font-fml--main: "Mulish", sans-serif;
+  --font-fml--roboto: "Roboto", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-  display: grid;
 }
-.container {
-  background-size: cover;
-  font-family: sans-serif;
-  text-align: center;
-  padding-left: 15%;
-  margin: auto;
-}
-
 header {
   background-color: var(--header-color);
   color: aliceblue;
@@ -33,31 +29,34 @@ header {
   width: 100%;
   text-align: center;
   justify-content: center;
-  position: fixed;
 }
 header * {
   text-align: center;
   display: inline;
 }
-header ul {
+header nav {
   display: flex;
   margin: auto;
   padding-right: 20%;
   padding-inline-start: 0;
 }
+header p {
+  font-style: italic;
+}
 a {
   text-decoration: none;
 }
-header li {
+header nav ul li {
   margin: 10px;
-  font-size: 0.9rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-family: var(--font-fml--roboto);
 }
-header li a {
+
+header nav ul li a {
   padding: 10px;
   color: aliceblue;
 }
-header li a:hover {
+header nav ul li a:hover {
   color: var(--hover--color);
 }
 .toggle-button {
@@ -86,6 +85,9 @@ header p {
 }
 
 /* Main */
+main {
+  font-family: var(--font-fml--main);
+}
 .portraitZorig {
   width: 100%;
 }

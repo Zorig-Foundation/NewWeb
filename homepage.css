@@ -13,6 +13,8 @@
   --color--gold: rgba(195, 154, 0, 255);
   --color--footer-bc: #01162c;
   --color--hover-inf: #37306b;
+  --font-fml--main: "Mulish", sans-serif;
+  --font-fml--roboto: "Roboto", sans-serif;
 }
 body {
   margin: 0;
@@ -32,26 +34,29 @@ header * {
   text-align: center;
   display: inline;
 }
-header ul {
+header nav {
   display: flex;
   margin: auto;
   padding-right: 20%;
   padding-inline-start: 0;
 }
+header p {
+  font-style: italic;
+}
 a {
   text-decoration: none;
 }
-header li {
+header nav ul li {
   margin: 10px;
-  font-size: 0.9rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-family: var(--font-fml--roboto);
 }
 
-header li a {
+header nav ul li a {
   padding: 10px;
   color: aliceblue;
 }
-header li a:hover {
+header nav ul li a:hover {
   color: var(--hover--color);
 }
 .toggle-button {
@@ -95,6 +100,7 @@ h2 {
   margin-top: 3.5rem;
   font-size: 2rem;
   color: var(--color-white);
+  font-family: var(--font-fml--main);
 }
 .homeImg {
   background: var(); /* fallback for old browsers */
@@ -150,6 +156,7 @@ h2 {
 }
 .linkBox a span {
   color: var(--color--black);
+  font-family: var(--font-fml--main);
 }
 .paddin10px {
   padding: 10px;
@@ -304,6 +311,7 @@ ul li a {
 .footer-main {
   width: 100%;
   background-color: var(--color--footer-bc);
+  font-family: var(--font-fml--main);
 }
 .hover:hover {
   color: var(--hover--color);

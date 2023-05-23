@@ -17,17 +17,17 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  
 }
 /* CSS */
 
-button{
+button {
   align-items: center;
-  background: #FFFFFF;
-  border: 0 solid #E2E8F0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  border: 0 solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  color: #1A202C;
+  color: #1a202c;
   display: inline-flex;
   font-family: Inter, sans-serif;
   font-size: 1rem;
@@ -56,7 +56,7 @@ button{
 }
 =======
 } */
-p{
+p {
   font-size: small;
   line-height: 1.5;
 }
@@ -147,6 +147,7 @@ main {
   padding-left: 5%;
   padding-top: 5%;
 }
+
 @media (max-width: 800px) {
   /* Header */
   .toggle-button {
@@ -178,50 +179,48 @@ main {
     padding-bottom: 1rem;
     border-top: 3px solid var(--hover--color);
   }
+}
 
+/* Footer */
+.responsiveUyed {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+/* Main */
 
-  }
+.homepicture img {
+  width: 100%;
+}
+.welcome {
+  width: 50%;
+  margin: 10% 1% 5% 15%;
+}
 
-  /* Footer */
-  .responsiveUyed {
-    margin-left: 35%;
-    margin-right: 35%;
-  }
-  /* Main */
-
-  .homepicture img {
-    width: 100%;
-  }
-  .welcome {
-    width: 50%;
-    margin: 10% 1% 5% 15%;
-  }
-
-  .donate{
-    padding-top: 5%;
-    display: flex;
-    background-color: #efefef;
-    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
-  }
-  img.zurag{
-    width: 43%;
-    padding: 5%;
-  }
-  .aside{
-    padding-top: 5%;
-    padding-right: 5%;
-  }
-  .action{
-    display: flex;
-  }
-  main{
-    font-family: 'Mulish', sans-serif;
-    display: grid;
-  }
-  .benefit{
-    padding-left: 5%;
-    padding-top: 5%;
-  }
+.donate {
+  padding-top: 5%;
+  display: flex;
+  background-color: #efefef;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+img.zurag {
+  width: 43%;
+  padding: 5%;
+}
+.aside {
+  padding-top: 5%;
+  padding-right: 5%;
+}
+.action {
+  display: flex;
+}
+main {
+  font-family: "Mulish", sans-serif;
+  display: grid;
+}
+.benefit {
+  padding-left: 5%;
+  padding-top: 5%;
+}
 
 .begin {
   margin-left: 20%;

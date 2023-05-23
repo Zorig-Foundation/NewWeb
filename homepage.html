@@ -38,21 +38,15 @@
       content="https://github.com/orgs/Zorig-Foundation/repositories"
     />
     <link rel="stylesheet" href="homepage.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Footer link -->
     <link
       href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Roboto:wght@700&family=Yanone+Kaffeesatz&display=swap"
       rel="stylesheet"
     />
+    <!-- Social link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap"
-      rel="stylesheet"
     />
   </head>
   <body>
@@ -64,67 +58,119 @@
       <a href="#" class="toggle-button">
         <i class="fa-solid fa-bars"></i>
       </a>
-      <ul class="navbars">
-        <li><a href="homepage.html"> Нүүр </a></li>
-        <li><a href="about.html"> Бидний тухай </a></li>
-        <li><a href="program.html"> Хөтөлбөр </a></li>
-        <li><a href="examine.html"> Шалгах </a></li>
-        <li><a href="collaborate.html"> Бидэнтэй хамтрах </a></li>
-      </ul>
+      <nav>
+        <ul class="navbars">
+          <li><a href="homepage.html"> Нүүр </a></li>
+          <li><a href="about.html"> Бидний тухай </a></li>
+          <li><a href="program.html"> Хөтөлбөр </a></li>
+          <li><a href="homepage.html"> Шалгах </a></li>
+          <li><a href="collaborate.html"> Бидэнтэй хамтрах </a></li>
+        </ul>
+      </nav>
     </header>
-    <article class="container">
-      <section class="welcome">
-        <h3>WELCOME</h3>
-        <h1>Зориг сан</h1>
-        <section>
-          <a href="program.html" class="program">Хөтөлбөрт хамрагдах</a>
-          <a href="collaborate.html" class="cooparate">Хамтран ажиллах</a>
-        </section>
-      </section>
-      <section class="homepicture">
-        <img alt="Zorig-Foundation " src="picture/nuur.PNG" alt="" />
-      </section>
-    </article>
-    <article class="quote">
-      <p>
-        Зориг сан нь ардчилсан хувьсгалын удирдагч Санжаасүрэнгийн Зоригийн үйл
-        хэргийг үргэлжлүүлэх зорилготойгоор 1998 онд үүсгэн байгуулагдсан төрийн
-        бус, ашгийн бус байгууллага юм.
-      </p>
-      <div class="line"></div>
-    </article>
-    <article class="checkAndInf">
-      <section class="check">
-        <section class="check_titles">
-          <h2>Тэтгэлгийн хариу шалгах</h2>
-          <p>Тэтгэлэг, хөтөлбөрийн хариу харах боломжтой</p>
-        </section>
-        <section class="check_submit">
-          <div class="height_line"></div>
-          <input type="text" name="firstname" placeholder="ШАЛГАХ КОД ..." />
-          <button>Шалгах</button>
-        </section>
-        <section class="check_information">энэ дээр хариу гарч ирнэ</section>
-      </section>
-      <section class="program_information">
-        <section class="news">
-          <article class="news_png">
-            <img alt="NEWS " src="picture/news.png" />
-          </article>
-          <article class="news_information">
-            <h5>ШИНЭ</h5>
-            <a href="#"><h1>Австралийн засгийн газрын хөтөлбөр</h1></a>
-            <p>
-              Австралийн засгийн газрын (@australiaawards) санхүүжилтээр Зориг
-              сангийн хэрэгжүүлдэг Эмэгтэйчүүдийн Манлайлал хөтөлбөр. Энэ жилийн
-              оролцогчид 4 багт хуваагдан 4 өөр төсөл хэрэгжүүлж байгаагийн нэг
-              нь Сэтгэлийн нар төсөл юм.
+    <main>
+      <div class="core">
+        <div class="homeImg" data-mobile-image-focal="50% 50%"></div>
+        <h2>Welcome to Zorig Foundation</h2>
+        <div class="two_link">
+          <div class="linkBox">
+            <a href="#" class="paddin10px"
+              ><img src="picture/certificate.png" alt="Save time and money" />
+              <span href="#">Хөтөлбөрт хамрагдах</span></a
+            >
+          </div>
+          <div class="linkBox">
+            <a href="#" class="paddin20px"
+              ><img src="picture/support.png" alt="Save time and money" /><span
+                href="#"
+                >Хамтран ажиллах</span
+              ></a
+            >
+          </div>
+        </div>
+        <div>
+          <form class="submit">
+            <input
+              class="submit"
+              type="search"
+              placeholder="Тэтгэлгийн хариу шалгах . . ."
+            />
+            <button
+              type="submit"
+              class="fxg-button fxg-button--orange"
+              aria-label="Click your to track your package"
+              id="btnSingleTrack"
+              data-analytics="hero|Track"
+              target="_blank"
+            >
+              Шалгах
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="content">
+        <div class="card">
+          <img src="picture/news.png" class="card-img" />
+          <div class="card-body">
+            <h1 class="card-title">
+              Канадын Элчин сайдын яамны Канад сангийн дэмжлэгтэйгээр Зориг сан
+              оюутан залууст зориулсан БАЙГАЛЬД ЭЭЛТЭЙ ЗАЛУУС ХӨТӨЛБӨР (Young
+              Environmental Leadership Program)-ийг 2 дахь удаагаа зарлалаа. Тус
+              хөтөлбөрт нийгэмдээ хувь нэмрээ оруулах,
+            </h1>
+            <p class="card-info">
+              #Дуусах: 2022 оны 09-р сарын 23-ны өдрийн 23:59 цаг
             </p>
-            <a href="collaborate.html" class="buttomLink">Дэлгэрэнгүй</a>
-          </article>
-        </section>
-      </section>
-    </article>
+            <button class="card-btn">Дэлгэрэнгүй</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="picture/news1 (2).png" class="card-img" />
+          <div class="card-body">
+            <h1 class="card-title">
+              Канадын Элчин сайдын яамны Канад сангийн дэмжлэгтэйгээр Зориг сан
+              оюутан залууст зориулсан БАЙГАЛЬД ЭЭЛТЭЙ ЗАЛУУС ХӨТӨЛБӨР (Young
+              Environmental Leadership Program)-ийг 2 дахь удаагаа зарлалаа. Тус
+              хөтөлбөрт нийгэмдээ хувь нэмрээ оруулах,
+            </h1>
+            <p class="card-info">
+              #Дуусах: 2022 оны 09-р сарын 23-ны өдрийн 23:59 цаг
+            </p>
+            <button class="card-btn">Дэлгэрэнгүй</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="picture/news1 (1).png" class="card-img" />
+          <div class="card-body">
+            <h1 class="card-title">
+              Канадын Элчин сайдын яамны Канад сангийн дэмжлэгтэйгээр Зориг сан
+              оюутан залууст зориулсан БАЙГАЛЬД ЭЭЛТЭЙ ЗАЛУУС ХӨТӨЛБӨР (Young
+              Environmental Leadership Program)-ийг 2 дахь удаагаа зарлалаа. Тус
+              хөтөлбөрт нийгэмдээ хувь нэмрээ оруулах,
+            </h1>
+            <p class="card-info">
+              #Дуусах: 2022 оны 09-р сарын 23-ны өдрийн 23:59 цаг
+            </p>
+            <button class="card-btn">Дэлгэрэнгүй</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="picture/news1 (3).png" class="card-img" />
+          <div class="card-body">
+            <h1 class="card-title">
+              Канадын Элчин сайдын яамны Канад сангийн дэмжлэгтэйгээр Зориг сан
+              оюутан залууст зориулсан БАЙГАЛЬД ЭЭЛТЭЙ ЗАЛУУС ХӨТӨЛБӨР (Young
+              Environmental Leadership Program)-ийг 2 дахь удаагаа зарлалаа. Тус
+              хөтөлбөрт нийгэмдээ хувь нэмрээ оруулах,
+            </h1>
+            <p class="card-info">
+              #Дуусах: 2022 оны 09-р сарын 23-ны өдрийн 23:59 цаг
+            </p>
+            <button class="card-btn">Дэлгэрэнгүй</button>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>
       <section class="footer-main">
         <article class="flex-wrap flex-just-spa-even responsiveUyed">
@@ -136,12 +182,18 @@
             </h3>
             <ul class="grid gap-1 color-white">
               <li>
-                <a href="about.html" class="color-white"> Бидний тухай </a>
+                <a href="about.html" class="color-white hover">
+                  Бидний тухай
+                </a>
               </li>
-              <li><a href="program.html" class="color-white"> Хөтөлбөр </a></li>
-              <li><a href="examine.html" class="color-white"> Шалгах </a></li>
               <li>
-                <a href="collaborate1.html" class="color-white">
+                <a href="program.html" class="color-white hover"> Хөтөлбөр </a>
+              </li>
+              <li>
+                <a href="examine.html" class="color-white hover"> Шалгах </a>
+              </li>
+              <li>
+                <a href="collaborate.html" class="color-white hover">
                   Бидэнтэй хамтрах
                 </a>
               </li>

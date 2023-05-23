@@ -38,7 +38,7 @@
     />
     <script src="program.js"></script>
     <link rel="stylesheet" href="program.css" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -53,10 +53,23 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -68,24 +81,28 @@
       <a href="#" class="toggle-button">
         <i class="fa-solid fa-bars"></i>
       </a>
-      <ul class="navbars">
-        <li><a href="homepage.html"> Нүүр </a></li>
-        <li><a href="about.html"> Бидний тухай </a></li>
-        <li><a href="program.html"> Хөтөлбөр </a></li>
-        <li><a href="examine.html"> Шалгах </a></li>
-        <li><a href="collaborate.html"> Бидэнтэй хамтрах </a></li>
-      </ul>
+      <nav>
+        <ul class="navbars">
+          <li><a href="homepage.html"> Нүүр </a></li>
+          <li><a href="about.html"> Бидний тухай </a></li>
+          <li><a href="program.html"> Хөтөлбөр </a></li>
+          <li><a href="homepage.html"> Шалгах </a></li>
+          <li><a href="collaborate.html"> Бидэнтэй хамтрах </a></li>
+        </ul>
+      </nav>
     </header>
-    <section class="top">
-      <p>Зориг сангийн зарладаг хөтөлбөрүүд</p>
-      <section class="search-box">
-        <input type="text" class="input-search" placeholder="Хайх...">
-     
+    <main>
+      <section class="top">
+        <section class="search-box">
+          <button class="btn-search"><i class="fa fa-search"></i></button>
+          <input type="text" class="input-search" placeholder="Хайх..." />
+        </section>
       </section>
-    </section>
-    <article id="container">
-      <program-list></program-list>
-    </article>
+      <article id="container">
+        <program-list></program-list>
+      </article>
+    </main>
+
     <footer>
       <section class="footer-main">
         <article class="flex-wrap flex-just-spa-even responsiveUyed">

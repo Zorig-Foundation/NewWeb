@@ -9,67 +9,17 @@
   --color--on-dardag: rgba(143, 216, 242, 0.87);
   --color--chiglel: #212b36;
   --color--toggle: #0d2e52;
+  --color--main: #073362;
+  --color--gold: rgba(195, 154, 0, 255);
   --color--footer-bc: #01162c;
+  --color--hover-inf: #37306b;
+  --font-fml--main: "Mulish", sans-serif;
+  --font-fml--roboto: "Roboto", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
-  display: grid;
 }
-.container {
-  background-size: cover;
-  font-family: sans-serif;
-  text-align: center;
-  padding-left: 15%;
-  margin: auto;
-}
-program-list {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  margin-top: 1rem;
-}
-
-.top{
-  background-color: #002e60;
-display: flex;
-  padding: 5%;
-
-}
-.top p{
-  margin: 4rem 15% 4rem 5%;
-    font-size: 1.5rem;
-    font-weight: 550;
-    font-family: "Source Serif Pro", serif;
-    color: #c39a00;
-  
-    width: 100%;
-padding-top: 5%;
-    text-align: center;
-    justify-content: center;
-
-}
-.search-box{
-  padding-top:9%;
-  
-
-}
-.input-search{
-
-  height: 50px;
-  width: 50px;
-  border-style: none;
- 
-  font-size: 18px;
-  letter-spacing: 2px;
-  outline: none;
-  border-radius: 25px;
-  width: 300px;
-  border-radius: 0px;
-  background-color: transparent;
-  border-bottom:1px solid rgba(255,255,255,.5);
-}
-
 header {
   background-color: var(--header-color);
   color: aliceblue;
@@ -79,31 +29,35 @@ header {
   width: 100%;
   text-align: center;
   justify-content: center;
-  position: fixed;
+  /* position: fixed; */
 }
 header * {
   text-align: center;
   display: inline;
 }
-header ul {
+header nav {
   display: flex;
   margin: auto;
   padding-right: 20%;
   padding-inline-start: 0;
 }
+header p {
+  font-style: italic;
+}
 a {
   text-decoration: none;
 }
-header li {
+header nav ul li {
   margin: 10px;
-  font-size: 0.9rem;
-  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-family: var(--font-fml--roboto);
 }
-header li a {
+
+header nav ul li a {
   padding: 10px;
   color: aliceblue;
 }
-header li a:hover {
+header nav ul li a:hover {
   color: var(--hover--color);
 }
 .toggle-button {
@@ -131,6 +85,9 @@ header p {
   margin: 1.5rem 1.5rem 1.5rem 2rem;
 }
 
+main {
+  padding-top: 10rem;
+}
 /* Footer */
 li {
   list-style: none;
@@ -220,5 +177,13 @@ i {
   .responsiveUyed {
     margin-left: 30%;
     margin-right: 30%;
+  }
+  .search-box {
+    padding-top: 20%;
+  }
+}
+@media (max-width: 1030px) {
+  .search-box {
+    padding-top: 13%;
   }
 }

@@ -56,39 +56,58 @@ header li a:hover{
     margin: auto;
     display: grid;
     grid-template-columns: 50% 50%;
+    font-family: 'Mulish', sans-serif;
     
 }
 .ner{
     grid-column-start: 1;
-    background-color: #002e60;
+    background-image: url(picture/scho.jpg);
+   
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0%;
     color: aliceblue;
-    font-family: 'Roboto', sans-serif;
+    
     text-align: justify;
     border-right: 2px solid #c39a00;
     
 }
+
 .ner h5, h2{
     padding-left: 40%;
     padding-right: 10%;
     padding-bottom: 5%;
-   
+    font-family: 'Mulish', sans-serif;
+
+}
+.ner h2{
+
+ 
+  color: white;
+  backdrop-filter: blur(1px) brightness(80%);
 }
 .towch{
     grid-column-start: 2;
     padding-top: 7%;
+    font-family: 'Mulish', sans-serif;
 }
 .filter{
     width: 100%;
-    background-color: #002e60;
-    border-top: 2px solid #c39a00;
+    border: 1px solid black;
     display: flex;
     padding-left: 20%;
     gap:10%;
-    color:aliceblue;
+    background-color: aliceblue;
     font-family: 'Roboto', sans-serif;
      margin: auto;
      position: sticky;
-     top:15%;
+     top:14.5%;
+     font-family: 'Mulish', sans-serif;
 }
 .more{
     padding: 6%;
@@ -96,7 +115,7 @@ header li a:hover{
     border: 1px solid black;
     height: 300px;
     padding-top: 15%;
-    
+    font-family: 'Mulish', sans-serif;
 }
 .more h3{
     margin: auto;

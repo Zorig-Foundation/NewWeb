@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="mn">
   <head>
     <title>Хөтөлбөр</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,7 +26,6 @@
       name="author"
       content="Zorig foundation Usukhbayar Bud-ochir, Battogtokh Dorjnamjmaa, Baatarsuren Myagmarjav"
     />
-    <meta property="og:title" content="Pizza Hut " />
     <meta
       property="og:description"
       content="Зориг Сан ххк, Zorig san, Tetgeleg , албан ёсны хаяг, компаны танилцуулга, байгууллагатай холбоотой, 
@@ -38,38 +37,15 @@
     />
     <script src="program.js"></script>
     <link rel="stylesheet" href="program.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Footer link -->
     <link
       href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Roboto:wght@700&family=Yanone+Kaffeesatz&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- Social link -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
-      rel="stylesheet"
     />
   </head>
   <body>
@@ -82,7 +58,7 @@
         <i class="fa-solid fa-bars"></i>
       </a>
       <nav>
-        <ul class="navbars">
+        <ul>
           <li><a href="homepage.html"> Нүүр </a></li>
           <li><a href="about.html"> Бидний тухай </a></li>
           <li><a href="program.html"> Хөтөлбөр </a></li>
@@ -91,21 +67,32 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="top">
-        <section class="search-box">
-          <button class="btn-search"><i class="fa fa-search"></i></button>
-          <input type="text" class="input-search" placeholder="Хайх..." />
-        </section>
-      </section>
-      <article id="container">
+    <main style="padding-top: 10rem">
+      <div>
+        <form class="submit">
+          <input
+            class="submit"
+            type="search"
+            placeholder="Хөтөлбөр, тэтгэлэг хайх . . ."
+          />
+          <button
+            type="submit"
+            aria-label="Click your to track your package"
+            id="btnSingleTrack"
+            data-analytics="hero|Track"
+          >
+            Хайх
+          </button>
+        </form>
+      </div>
+      <div id="container">
         <program-list></program-list>
-      </article>
+      </div>
     </main>
 
     <footer>
-      <section class="footer-main">
-        <article class="flex-wrap flex-just-spa-even responsiveUyed">
+      <div class="footer-main">
+        <div class="flex-wrap flex-just-spa-even responsiveUyed">
           <article class="margin-top-4rem">
             <h3
               class="color-white margin-negative-0 border-bottom padding-bottom-1rem"
@@ -145,15 +132,15 @@
               </li>
             </ul>
           </article>
-        </article>
-        <article class="flex-wrap flex-just-spa-even icons">
+        </div>
+        <div class="flex-wrap flex-just-spa-even icons">
           <i class="fa-brands fa-square-facebook fa-2xl"></i>
           <i class="fa-brands fa-twitter fa-2xl"></i>
           <i class="fa-brands fa-instagram fa-2xl"></i>
           <i class="fa-brands fa-youtube fa-2xl"></i>
           <i class="fa-solid fa-cloud fa-2xl"></i>
-        </article>
-      </section>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

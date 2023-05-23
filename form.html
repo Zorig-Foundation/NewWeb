@@ -137,15 +137,15 @@
           >
           <textarea name="field3" placeholder="Эсээ"></textarea>
           <label for="job">Бусад хавсаргах материал:</label>
-          <input type="file" name="field1" />
-          <input type="file" name="field1" />
+          <input type="file" name="myfile" aria-labelledby="temperature low" />
+          <input type="file" name="myfile" aria-labelledby="temperature low" />
         </fieldset>
         <input type="submit" value="Apply" />
       </form>
     </div>
     <footer>
-      <section class="footer-main">
-        <article class="flex-wrap flex-just-spa-even responsiveUyed">
+      <div class="footer-main">
+        <div class="flex-wrap flex-just-spa-even responsiveUyed">
           <article class="margin-top-4rem">
             <h3
               class="color-white margin-negative-0 border-bottom padding-bottom-1rem"
@@ -154,12 +154,18 @@
             </h3>
             <ul class="grid gap-1 color-white">
               <li>
-                <a href="about.html" class="color-white"> Бидний тухай </a>
+                <a href="about.html" class="color-white hover">
+                  Бидний тухай
+                </a>
               </li>
-              <li><a href="program.html" class="color-white"> Хөтөлбөр </a></li>
-              <li><a href="examine.html" class="color-white"> Шалгах </a></li>
               <li>
-                <a href="collaborate1.html" class="color-white">
+                <a href="program.html" class="color-white hover"> Хөтөлбөр </a>
+              </li>
+              <li>
+                <a href="examine.html" class="color-white hover"> Шалгах </a>
+              </li>
+              <li>
+                <a href="collaborate.html" class="color-white hover">
                   Бидэнтэй хамтрах
                 </a>
               </li>
@@ -179,15 +185,15 @@
               </li>
             </ul>
           </article>
-        </article>
-        <article class="flex-wrap flex-just-spa-even icons">
+        </div>
+        <div class="flex-wrap flex-just-spa-even icons">
           <i class="fa-brands fa-square-facebook fa-2xl"></i>
           <i class="fa-brands fa-twitter fa-2xl"></i>
           <i class="fa-brands fa-instagram fa-2xl"></i>
           <i class="fa-brands fa-youtube fa-2xl"></i>
           <i class="fa-solid fa-cloud fa-2xl"></i>
-        </article>
-      </section>
+        </div>
+      </div>
     </footer>
     <!-- <script src="header.js"></script> -->
   </body>

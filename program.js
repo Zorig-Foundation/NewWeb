@@ -102,12 +102,13 @@ class ProgramList extends HTMLElement {
             item.style.borderBottom = ""; // Remove border style from all items
           });
 
-          // Add the 'selected' class and update border style of the clicked item
+          // дарсан зүйлийн хүрээний загварыг шинэчилнэ
           const clickedItem = event.target.closest(".item");
           if (clickedItem) {
             clickedItem.classList.add("selected");
-            clickedItem.style.borderBottom = "2px solid #002e60"; // Add a red border to the clicked item
+            clickedItem.style.borderBottom = "2px solid #002e60"; // Дарсан зүйлд хүрээ нэмнэ
           }
+          // Тухайн click хийсэн container-ийн хамгийн эхэнд гаргах
           window.scrollTo(0, 0);
           const item = event.target.closest(".item");
           if (!item) return;

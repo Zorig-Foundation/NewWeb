@@ -25,10 +25,11 @@ header {
   color: aliceblue;
   display: flex;
   margin: auto;
+  border-bottom: 2px solid var(--hover--color);
   width: 100%;
   text-align: center;
   justify-content: center;
-  position: fixed;
+  /* position: fixed; */
 }
 header * {
   text-align: center;
@@ -84,6 +85,9 @@ header p {
   margin: 1.5rem 1.5rem 1.5rem 2rem;
 }
 
+main {
+  padding-top: 10rem;
+}
 /* Footer */
 li {
   list-style: none;

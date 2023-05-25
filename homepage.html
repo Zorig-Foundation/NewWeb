@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="en">
   <head>
     <title>Нүүр</title>
     <meta charset="UTF-8" />
@@ -59,7 +59,7 @@
         <i class="fa-solid fa-bars"></i>
       </a>
       <nav>
-        <ul>
+        <ul class="navbars">
           <li><a href="homepage.html"> Нүүр </a></li>
           <li><a href="about.html"> Бидний тухай </a></li>
           <li><a href="program.html"> Хөтөлбөр </a></li>
@@ -76,12 +76,13 @@
           <div class="linkBox">
             <a href="#" class="paddin10px"
               ><img src="picture/certificate.png" alt="Save time and money" />
-              <span>Хөтөлбөрт хамрагдах</span></a
+              <span href="#">Хөтөлбөрт хамрагдах</span></a
             >
           </div>
           <div class="linkBox">
             <a href="#" class="paddin20px"
               ><img src="picture/support.png" alt="Save time and money" /><span
+                href="#"
                 >Хамтран ажиллах</span
               ></a
             >
@@ -100,6 +101,7 @@
               aria-label="Click your to track our package"
               id="btnSingleTrack"
               data-analytics="hero|Track"
+              target="_blank"
             >
               Шалгах
             </button>
@@ -108,7 +110,7 @@
       </div>
       <div class="content">
         <div class="card">
-          <img src="picture/news.png" class="card-img" alt="News" />
+          <img src="picture/news.png" class="card-img" />
           <div class="card-body">
             <article>
               <h1 class="card-title">
@@ -123,7 +125,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="picture/news2.png" class="card-img" alt="News" />
+          <img src="picture/news1 (2).png" class="card-img" />
           <div class="card-body">
             <article>
               <h1 class="card-title">
@@ -138,7 +140,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="picture/news1.png" class="card-img" alt="News" />
+          <img src="picture/news1 (1).png" class="card-img" />
           <div class="card-body">
             <article>
               <h1 class="card-title">
@@ -153,7 +155,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="picture/news3.png" class="card-img" alt="News" />
+          <img src="picture/news1 (3).png" class="card-img" />
           <div class="card-body">
             <article>
               <h1 class="card-title">
@@ -170,8 +172,8 @@
       </div>
     </main>
     <footer>
-      <div class="footer-main">
-        <div class="flex-wrap flex-just-spa-even responsiveUyed">
+      <section class="footer-main">
+        <article class="flex-wrap flex-just-spa-even responsiveUyed">
           <article class="margin-top-4rem">
             <h3
               class="color-white margin-negative-0 border-bottom padding-bottom-1rem"
@@ -211,15 +213,15 @@
               </li>
             </ul>
           </article>
-        </div>
-        <div class="flex-wrap flex-just-spa-even icons">
+        </article>
+        <article class="flex-wrap flex-just-spa-even icons">
           <i class="fa-brands fa-square-facebook fa-2xl"></i>
           <i class="fa-brands fa-twitter fa-2xl"></i>
           <i class="fa-brands fa-instagram fa-2xl"></i>
           <i class="fa-brands fa-youtube fa-2xl"></i>
           <i class="fa-solid fa-cloud fa-2xl"></i>
-        </div>
-      </div>
+        </article>
+      </section>
     </footer>
     <!-- <script src="header.js"></script> -->
   </body>
